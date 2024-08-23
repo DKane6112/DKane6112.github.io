@@ -1,0 +1,219 @@
+body{
+    display: grid;
+    grid-template-areas:  'nav'
+                          'section1'
+                          'section3'
+                          'services'
+                          'section4'
+                          'about'
+                          'section5'
+                          'info'
+                          'contact'
+                          ; 
+    grid-template-columns: 1fr;
+  }
+
+nav{
+    flex-direction: column;
+    
+}
+
+#siteName{
+    justify-content: center;
+}
+
+#logo{
+    justify-content: space-around;
+    padding: 0;
+}
+
+#section1{
+    padding:0;
+    
+}
+
+
+#about{
+    padding: 0;
+}
+
+#profile{
+    position: static;
+    transform: none;
+    width: 100%;
+}
+
+#about-img{
+    width: auto;
+}
+
+#services-section{
+    padding: 0;
+    height: auto;
+}
+
+#services {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service{
+    width: auto;
+}
+
+.service-img{
+    width: 100%;
+    
+}
+#info{
+    padding: 0;
+    height: auto;
+}
+
+#info h2, #info p{
+    width: fit-content;
+}
+
+#info-content{
+    flex-direction: column;
+}
+
+.info{
+    max-width: none;
+    width: 80%;
+}
+
+.contact-section{
+    padding: 0;
+    
+}
+
+#contact-wrapper{
+    padding: 0;
+}
+
+#message{
+    width: 100%;
+}
+
+footer{
+    padding:0;
+}
+
+h1{
+    font-size: 3rem;
+    width: fit-content;
+}
+
+h2{
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+#welcome p{
+    font-size: 1rem;
+}
+
+#typed-text p{
+    font-size: 3rem;
+}
+
+#typed-text{
+    padding-top: 3rem;
+}
+
+#section1{
+    align-items: flex-start;
+    
+}
+
+#welcome{
+    padding: .5rem;
+    max-width: none;
+}
+
+#about-text{
+    font-size: 1.2rem;
+    padding: .2rem;
+    width: auto;
+}
+
+#about-content{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+
+#contact-wrapper{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: .2rem;
+}
+
+#contact-text{
+    font-size: 1.2rem;
+    max-width: 100vw;
+    width: auto;
+}
+
+#logo h2{
+    font-size: 1.1rem;
+}
+
+.icon{
+    margin: 0 .5rem;
+}
+
+#phoneIcon p, #emailIcon p{
+    font-size: .8rem;
+}
+#emailIcon{
+    padding-right: .2rem;
+}
+
+nav ul li a{
+    padding: .3rem .4rem;
+}
+
+#section3 {
+    background-size: cover;
+  }
+
+  #section4 {
+    background-size: cover;
+  }
+
+  #section5 {
+    background-size: cover;
+  }
+
+  .borderLogoLeft{
+    display:none;
+  }
+  .borderLogoRight{
+    display:none;
+  }
+
+  #section3 {
+    grid-area: section3;
+    background-color: #fff1f1;
+    background-image: url('./images/work1.jpg');
+    
+    
+  }
+
+  #section4 {
+    grid-area: section4;
+    background-color: #fff1f1;
+    background-image: url('./images/work4.jpg');
+    
+  }
+
+  #section5 {
+    grid-area: section5;
+    background-color: #fff1f1;
+    background-image: url('./images/work3.jpg');
+    
+  }
