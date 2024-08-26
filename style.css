@@ -24,7 +24,11 @@ body, html {
     color: #333333;
     font-family: "Lora";
   }
-  
+
+  a{
+    text-decoration-color: #ff7272;
+  }
+
   nav {
     box-sizing: border-box;
     background-color: #FFF5E1;
