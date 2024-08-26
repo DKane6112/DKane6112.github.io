@@ -144,7 +144,9 @@ h2{
     align-items: center;
 }
 
-
+.contact-section{
+    height: auto;
+}
 
 #contact-wrapper{
     flex-direction: column;
