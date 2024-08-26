@@ -15,13 +15,19 @@ body, html {
                           'section4'
                           'info'
                           'contact'
+                          'footer'
                           ; 
     grid-template-columns: 1fr;
+  }
+
+  p{
+    color: #333333;
+    font-family: "Lora";
   }
   
   nav {
     box-sizing: border-box;
-    background-color: #fff1f1;
+    background-color: #FFF5E1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,18 +37,21 @@ body, html {
   }
 
   .scrolled{
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
     border-bottom:#ff7272 solid .1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     position:fixed;
     z-index: 1000;
     padding: .5rem;
     
   }
   
+  ul {
+    list-style: none;;
+  }
+
   nav ul {
-    list-style: none;
     margin: 0;
     padding: .5rem;
     display: flex;
@@ -91,12 +100,15 @@ body, html {
 
   h1{
     font-size: 5rem;
-  }
+    color: #333333;
+    font-family: "Montserrat";
+  } 
 
   h2{
     font-size: 2rem;
     margin: 0;
     color:#ff7272;
+    font-family: "Montserrat";
   }
 
   #phoneIcon{
@@ -129,12 +141,12 @@ body, html {
     max-width: 100vw;
   }
   
-  #section1 {
+  #home {
     grid-area: section1;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    background-color: #fff1f1;
+    background-color: #FFF5E1;
     padding: 2rem;
     
   }
@@ -166,6 +178,7 @@ body, html {
     color: #ff7272;
     margin: 0;
     display: inline;
+    font-family: "Montserrat";
   }
 
   .btn{
@@ -243,7 +256,6 @@ body, html {
   .service-img{
     width: 24vw;
     height: auto;
-    aspect-ratio: 14/9;
     border-radius: 20px;
     box-shadow: #555 .1rem .1rem .5rem;
   }
@@ -350,7 +362,7 @@ body, html {
   .contact-section {
     max-width: 100vw;
     height: 93vh;
-    background-color: #fff1f1;
+    background-color: #FFF5E1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -363,6 +375,7 @@ body, html {
     justify-content: space-around;
     align-items: baseline;
     max-width: 100vw;
+    height: 100vh;
     padding-left: 2rem;
   }
 
@@ -408,116 +421,82 @@ body, html {
   }
 
   footer{
-    grid-area: footer;
+    
     display: flex;
     flex-direction: column;
-    background-color: #444;
+    grid-area: footer;
+    background-color: #666;
     color: white;
     text-align: center;
-    padding: 1rem;
     padding-bottom: 0;
     position: relative;
     bottom: 0;
     width: 100%;
   }
 
-  #footer-content{
+  footer ul{
     display: flex;
-    border-bottom: #fff1f1 solid .1rem;
-    align-items: center;
-    justify-content: space-around;
-    
-  }
-
-  #footer-logo{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
-    text-decoration: none;
+    padding: 0;
   }
 
-  #footer-contact{
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    gap: 1.5rem;
+  footer li{
+    padding: .1rem;
   }
 
-  #footer-contact p{
-    margin: 0;
+  footer p{
+    font-size: .8rem;
+    display: inline;
+    color: white;
   }
 
-  #footer-logo img{
-    padding-top: 0;
-  }
-
-  #footer-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-decoration: none;
-  }
-
-  #footer-links a{
+  footer a{
     color: white;
     text-decoration: none;
-    margin: 1rem;
-    margin-top: 0;
+  }
+
+  footer a:hover{
+    color: #ff7272;
+  }
+
+  #footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
     
   }
 
-  #hours{
+  .footer-section{
+    font-size: .9rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    
   }
 
-  #email p, #phone p, #address p{
-    margin: .2rem;
-  }
-
-  #hours p, #footer-social p, #footer-links p{
-    margin-top:0;
-    margin-bottom: 1rem;
-  }
-
-  #footer-social{
+  .footer-section ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  #email, #phone{
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  #footer-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #footer-images p{
-    margin: 0;
-  }
-
-  #footer-images img{
-    width: 7rem;
-    height: auto;
-    margin-right: 1rem;
-  }
-
-  #footer-wrapper{
-    display: flex;
     align-items: baseline;
-    gap: 2rem;
+    text-decoration: none;
   }
 
+
+  #footer-logo{
+    padding-top: 0;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .footer-bottom{
+    padding: .5rem;
+    margin: 0 2rem 0 2rem;
+    border-top: #fff1f1 solid .1rem;
+    
+  }
 
   input, select, textarea {
     width: 80%;
