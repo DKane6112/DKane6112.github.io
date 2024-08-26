@@ -73,3 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('input, textarea, select').forEach((element) => {
+    element.addEventListener('focus', (event) => {
+        setTimeout(() => {
+            event.target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+            });
+        }, 100);
+    });
+});
