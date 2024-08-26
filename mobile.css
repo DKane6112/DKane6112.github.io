@@ -9,6 +9,7 @@ body{
                           'section5'
                           'info'
                           'contact'
+                          'footer'
                           ; 
     grid-template-columns: 1fr;
   }
@@ -27,7 +28,7 @@ nav{
     padding: 0;
 }
 
-#section1{
+#home{
     padding:0;
     
 }
@@ -122,7 +123,7 @@ h2{
     padding-top: 3rem;
 }
 
-#section1{
+#home{
     align-items: flex-start;
     
 }
@@ -216,4 +217,22 @@ nav ul li a{
     background-color: #fff1f1;
     background-image: url('./images/work3.jpg');
     
+  }
+
+
+  footer p{
+    font-size: .5rem;
+  }
+
+  .footer-section{
+    font-size: .6rem;
+    width: auto;
+  }
+
+  #footer-img{
+    display: none;
+  }
+
+  #footer-content{
+    align-items: normal;
   }
